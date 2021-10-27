@@ -16,9 +16,7 @@ body {
     */
     width: 100vw;
     height: 100vh;
-
     background-color: rgb(243, 240, 240);
-
     /* Perfeito! Essa é a maneira recomendada de
        alinhar elementos no centro: com o Flex.
 
@@ -45,6 +43,7 @@ body {
    Referência:
    https://www.w3schools.com/cssref/css_selectors.asp
    */
+
 form.login-form {
     /* Colocar um padding (margem interna, ou margem para
        dentro do container) é muito mais eficiente que colocar
@@ -59,10 +58,8 @@ form.login-form {
        Agora imagine se o conteúdo dessa caixa for dinâmico com JS?
     */
     padding: 24px;
-
     border-radius: 4px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 20px 0 #c9c9c9;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -76,14 +73,22 @@ form.login-form {
     Referência:
     https://www.w3schools.com/cssref/css_selectors.asp
 */
-form.login-form fieldset {
-    display: flex;
-    flex-direction: column;
+
+fieldset {
     border: 0;
 }
 
-form.login-form fieldset label {
+fieldset.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset.input-field label {
     font-weight: bold;
+}
+
+.input-field input {
+    padding: 8px;
 }
 
 .logo {
@@ -100,3 +105,9 @@ form.login-form fieldset label {
     color: white;
     font-size: 16px;
 }
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+

@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
     <title>Login - Revisado</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="container">
-      <form class="login-form">
-        <img src="images/Design sem nome.png" class="logo" />
-        <!--
+        <form class="login-form">
+            <img src="images/Design sem nome.png" class="logo" />
+            <!--
             O correto, pela W3C é Usar <label> quando quiser fazer
             um título de um componente de formulário.
 
@@ -22,7 +23,7 @@
         -->
 
 
-        <!--
+            <!--
             Como as duas tags (<label> e <input>) formam um único
             componente e falam do mesmo assunto do formulário, usa-se
             um fieldset (algo como um 'grupo do field').
@@ -30,18 +31,24 @@
             Referência:
             https://developer.mozilla.org/pt-BR/docs/Learn/Forms/How_to_structure_a_web_form
         -->
-        <fieldset>
-          <label>E-mail</label>
-          <input class="email" type="email" name="email" id="email" />
-        </fieldset>
+            <fieldset class="input-field">
+                <input class="email" type="email" name="email" id="email" placeholder="E-mail" />
+            </fieldset>
 
-        <fieldset>
-          <label>Senha</label>
-          <input type="password" name="password" id="password" />
-        </fieldset>
+            <fieldset class="input-field">
+                <input type="password" name="password" id="password" placeholder="Senha" />
+            </fieldset>
 
-        <button type="submit" class="login-button">Login</button>
-      </form>
+            <div class="vertical">
+                <fieldset>
+                    <input type="checkbox" name="remember" id="remember" />
+                    <label>Lembrar-me</label>
+                </fieldset>
+                <a href="forgot.html">Esqueci minha senha</a>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+        </form>
     </div>
-  </body>
+</body>
+
 </html>
