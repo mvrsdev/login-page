@@ -2,28 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
-    <title>Login</title>
+    <title>Login - Revisado</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="login">
-            <form>
-                <img src="images/Design sem nome.png" class="logo"><br>
-                <strong>E-mail</strong><br>
-                <input class="email" type="email" name="email" id="email">
-                <br>
-                <strong>Senha <br></strong>
-                <input type="password" name="password" id="password">
-                <br><br>
-                <button type="submit" class="button-login">Login</button>
-            </form>
-        </div>
+        <form class="login-form">
+            <img src="images/Design sem nome.png" class="logo" />
+
+            <fieldset class="input-field">
+                <input class="email" type="email" name="email" id="email" placeholder="E-mail" />
+            </fieldset>
+
+            <fieldset class="input-field">
+                <input type="password" name="password" id="password" placeholder="Senha" />
+            </fieldset>
+
+            <div class="vertical">
+                <fieldset>
+                    <input type="checkbox" name="remember" id="remember" />
+                    <label>Lembrar-me</label>
+                </fieldset>
+                <a href="forgot.html">Esqueci minha senha</a>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+        </form>
     </div>
 </body>
 
