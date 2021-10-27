@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
-    <title>Login</title>
-</head>
+    <title>Login - Revisado</title>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="login">
-            <form>
-                <img src="images/Design sem nome.png" class="logo"><br>
-                <strong>E-mail</strong><br>
-                <input class="email" type="email" name="email" id="email">
-                <br>
-                <strong>Senha <br></strong>
-                <input type="password" name="password" id="password">
-                <br><br>
-                <button type="submit" class="button-login">Login</button>
-            </form>
-        </div>
-    </div>
-</body>
+      <form class="login-form">
+        <img src="images/Design sem nome.png" class="logo" />
+        <!--
+            O correto, pela W3C é Usar <label> quando quiser fazer
+            um título de um componente de formulário.
 
+            Referência:
+            https://www.w3schools.com/tags/tag_label.asp
+        -->
+
+
+        <!--
+            Como as duas tags (<label> e <input>) formam um único
+            componente e falam do mesmo assunto do formulário, usa-se
+            um fieldset (algo como um 'grupo do field').
+
+            Referência:
+            https://developer.mozilla.org/pt-BR/docs/Learn/Forms/How_to_structure_a_web_form
+        -->
+        <fieldset>
+          <label>E-mail</label>
+          <input class="email" type="email" name="email" id="email" />
+        </fieldset>
+
+        <fieldset>
+          <label>Senha</label>
+          <input type="password" name="password" id="password" />
+        </fieldset>
+
+        <button type="submit" class="login-button">Login</button>
+      </form>
+    </div>
+  </body>
 </html>
